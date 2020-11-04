@@ -24,4 +24,9 @@ public class UserService {
 
 	}
 
+	public User getUserByAccaountName(String accountName) {
+		return userDao.getUserByAccountName(accountName);
+
+	}
+
 }
