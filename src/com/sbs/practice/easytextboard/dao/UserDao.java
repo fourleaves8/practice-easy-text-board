@@ -27,4 +27,13 @@ public class UserDao {
 		return user.userId;
 	}
 
+	public User getUserByAccountName(String accountName) {
+		for (User user : users) {
+			if (user.accountName.equals(accountName)) {
+				return user;
+			}
+		}
+		return null;
+	}
+
 }
